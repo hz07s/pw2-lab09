@@ -6,5 +6,70 @@ import { Injectable } from '@angular/core';
 export class AhorcadoService {
     palabras: string[] = ['Dota', 'Left', 'Invoker', 'Hernan', 'Andy'];
     palabraRandom: string;
+    
+    figure0: string = " +---+     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "========= "
+                    
+  figure1: string = " +---+     \n" +
+                    " |   |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "========= "
+          
+  figure2: string = " +---+     \n" +
+                    " |   |     \n" +
+                    " O   |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "========= "
+            
+  figure3: string = " +---+     \n" +
+                    " |   |     \n" +
+                    " O   |     \n" +
+                    " |   |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "========= "
+            
+  figure4: string = " +---+     \n" +
+                    " |   |     \n" +
+                    " O   |     \n" +
+                    "/|   |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "========= "
+            
+  figure5: string = " +---+     \n" +
+                    " |   |     \n" +
+                    " O   |     \n" +
+                    "/|\\  |     \n" +
+                    "     |     \n" +
+                    "     |     \n" +
+                    "========= "
+            
+  figure6: string = " +---+     \n" +
+                    " |   |     \n" +
+                    " O   |     \n" +
+                    "/|\\  |     \n" +
+                    "/    |     \n" +
+                    "     |     \n" +
+                    "========= "
+            
+  figure7: string = " +---+     \n" +
+                    " |   |     \n" +
+                    " O   |     \n" +
+                    "/|\\  |     \n" +
+                    "/ \\  |     \n" +
+                    "     |     \n" +
+                    "========= "
+
     constructor() { }
 }
