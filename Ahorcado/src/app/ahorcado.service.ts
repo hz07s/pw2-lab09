@@ -5,6 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class AhorcadoService {
     palabras: string[] = ['Dota', 'Left', 'Invoker', 'Hernan', 'Andy'];
-
+    palabraRandom: string;
     constructor() { }
 }
