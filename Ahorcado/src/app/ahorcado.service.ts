@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class AhorcadoService {
-
+    palabras: string[] = ['Dota', 'Left', 'Invoker', 'Hernan', 'Andy'];
 
     constructor() { }
 }
