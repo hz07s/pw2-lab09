@@ -71,5 +71,9 @@ export class AhorcadoService {
                     "     |     \n" +
                     "========= "
 
+    
+    figuras: string[] = [this.figure0, this.figure1, this.figure2, this.figure3, this.figure4, this.figure5, this.figure6, this.figure7];
+    
+    
     constructor() { }
 }
