@@ -83,4 +83,16 @@ export class AhorcadoService {
         const indice = Math.floor(Math.random() * this.palabras.length);
         return this.palabras[indice];
     }
+
+    rellenarPalabra(): string[] {
+    let palabra_vacia: string[] = [];
+    for (let i = 0; i < this.palabraRandom.length; i++){
+      if (this.palabraRandom[i] == ' '){
+        palabra_vacia[i] = " ";
+      } else {
+        palabra_vacia[i] = "_";
+      }
+    }
+    return palabra_vacia;
+  }
 }
