@@ -78,4 +78,9 @@ export class AhorcadoService {
     constructor() {
         this.palabraRandom = this.palabrAleatoria();
     }
+
+    palabrAleatoria(): string {
+        const indice = Math.floor(Math.random() * this.palabras.length);
+        return this.palabras[indice];
+    }
 }
