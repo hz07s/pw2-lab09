@@ -1,1 +1,13 @@
 <p>ahorcado works!</p>
+<div class='conteiner'>
+  <h1>Juego del Ahorcado</h1>
+  @if (palabra_random != auxiliar){
+    @if (!perder){
+      <p class='parrafoinicio'>Coloque un caracter</p>
+      <form (ngSubmit)='onSubmit()'>
+        <input type='text' [(ngModel)]="valor_ingresado" name="letra" maxlength="1" autocomplete="off"/>
+        <input type='submit' value='Intentar'/>
+      </form>
+    }
+  }
+</div> 
