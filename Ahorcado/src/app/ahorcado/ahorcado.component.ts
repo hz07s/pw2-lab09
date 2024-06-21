@@ -36,6 +36,8 @@ export class AhorcadoComponent {
           this.palabra_vacia[c] = this.palabra_random[c];
         }
       }
+      this.message = this.palabra_vacia.join(' ');
+      this.auxiliar = this.palabra_vacia.join('');
     }
     this.valor_ingresado = '';
   }
