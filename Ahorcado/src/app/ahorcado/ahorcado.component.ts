@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-ahorcado',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './ahorcado.component.html',
   styleUrl: './ahorcado.component.css'
 })
@@ -27,5 +28,15 @@ export class AhorcadoComponent {
     this.message = this.palabra_vacia.join(' ');
   }
   ngOnInit(): void{
+  }
+  onSubmit(): void{
+    if(this.palabra_random.toLowerCase().includes(this.valor_ingresado.toLowerCase())){
+      for (let c = 0; c < this.palabra_random.length; c++){
+        if (this.palabra_random[c].toLowerCase() == this.valor_ingresado.toLowerCase()){
+          this.palabra_vacia[c] = this.palabra_random[c];
+        }
+      }
+    }
+    this.valor_ingresado = '';
   }
 }
