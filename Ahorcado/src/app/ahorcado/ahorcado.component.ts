@@ -48,6 +48,9 @@ export class AhorcadoComponent {
         this.ganar = true;
       }
     }
+    if (!(this.letrasUsadas.includes(this.valor_ingresado.toLowerCase()))){
+      this.letrasUsadas.push(this.valor_ingresado.toLowerCase());
+    }
     this.valor_ingresado = '';
   }
 }
