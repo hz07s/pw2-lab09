@@ -15,6 +15,9 @@ export class AhorcadoComponent {
   figures: string[];
   figure: string;
   message: string = '';
+  auxiliar: string = '';
+  letrasUsadas: string[] = [];
+  mensaje = '';
   constructor(private ahorcadoService: AhorcadoService) { 
     this.ganar = false;
     this.palabra_random = this.ahorcadoService.palabraRandom;
