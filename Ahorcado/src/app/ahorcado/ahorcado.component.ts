@@ -30,7 +30,10 @@ export class AhorcadoComponent {
   ngOnInit(): void{
   }
   onSubmit(): void{
-    if(this.palabra_random.toLowerCase().includes(this.valor_ingresado.toLowerCase())){
+    this.mensaje = ' ';
+    if (this.letrasUsadas.includes(this.valor_ingresado.toLowerCase())) {
+      this.mensaje = 'Letra Repetida';
+    } else if(this.palabra_random.toLowerCase().includes(this.valor_ingresado.toLowerCase())){
       for (let c = 0; c < this.palabra_random.length; c++){
         if (this.palabra_random[c].toLowerCase() == this.valor_ingresado.toLowerCase()){
           this.palabra_vacia[c] = this.palabra_random[c];
