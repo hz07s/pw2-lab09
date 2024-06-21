@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AhorcadoService } from '../ahorcado.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -8,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './ahorcado.component.html',
   styleUrl: './ahorcado.component.css'
 })
-export class AhorcadoComponent {
+export class AhorcadoComponent implements OnInit{
   ganar: boolean;
   palabra_random: string = '';
   palabra_vacia: string[];
@@ -19,6 +20,8 @@ export class AhorcadoComponent {
   auxiliar: string = '';
   letrasUsadas: string[] = [];
   mensaje = '';
+  i: number = 1;
+  
   constructor(private ahorcadoService: AhorcadoService) { 
     this.ganar = false;
     this.palabra_random = this.ahorcadoService.palabraRandom;
@@ -52,5 +55,9 @@ export class AhorcadoComponent {
       this.letrasUsadas.push(this.valor_ingresado.toLowerCase());
     }
     this.valor_ingresado = '';
+  }
+  
+  volverJugar(): void{
+    window.location.reload();
   }
 }
