@@ -38,6 +38,12 @@ export class AhorcadoComponent {
       }
       this.message = this.palabra_vacia.join(' ');
       this.auxiliar = this.palabra_vacia.join('');
+    } else {
+      this.figure = this.figures[this.i];
+      this.i += 1;
+      if (this.i == 8){
+        this.ganar = true;
+      }
     }
     this.valor_ingresado = '';
   }
