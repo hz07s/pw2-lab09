@@ -1,0 +1,93 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .parrafoinicio {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    padding-left: 680px;
+  }
+  
+  input[type="text"] {
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    clear: both;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  pre {
+    clear: both;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 50px;
+    width: 400px;
+    margin-left: 250px;
+    float: left;
+    text-align: center;
+  }
+  
+  .mensajes {
+    float: left;
+    margin-top: 60px;
+    margin-left: 70px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 50px;
+    width: 500px;
+    text-align: center;
+  }
+  
+  .mensajelower {
+    clear: both;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+  .letras {
+    text-align: left;
+    font-size: 25px;
+  }
