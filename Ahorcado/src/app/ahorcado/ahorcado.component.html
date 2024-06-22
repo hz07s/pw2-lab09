@@ -19,6 +19,12 @@
           }
         <p>
       </div>
+    } @else {
+      <pre>{{figure}}</pre>
+      <p class="mensajelower">PERDISTE!!! La palabra era "{{palabra_random}}"</p>
+      <form (ngSubmit)='volverJugar()'>
+        <input type='submit' value='Volver a Jugar'/>
+      </form>
     }
   }
 </div> 
