@@ -8,6 +8,17 @@
         <input type='text' [(ngModel)]="valor_ingresado" name="letra" maxlength="1" autocomplete="off"/>
         <input type='submit' value='Intentar'/>
       </form>
+      <pre>{{figure}}</pre>
+      <div class="mensajes">
+        <p>{{message}}</p>
+        <p style='color:red; font-size: 30px'>{{mensaje}}</p>
+        <p class='letras'>letras Usadas: </p>
+        <p class='letras'>
+          @for (letra of letrasUsadas;  track letra){
+            "{{letra}}"
+          }
+        <p>
+      </div>
     }
   }
 </div> 
