@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './ahorcado.component.css'
 })
 export class AhorcadoComponent implements OnInit{
-  ganar: boolean;
+  perder: boolean;
   palabra_random: string = '';
   palabra_vacia: string[];
   valor_ingresado: string = '';
@@ -23,7 +23,7 @@ export class AhorcadoComponent implements OnInit{
   i: number = 1;
   
   constructor(private ahorcadoService: AhorcadoService) { 
-    this.ganar = false;
+    this.perder = false;
     this.palabra_random = this.ahorcadoService.palabraRandom;
     this.palabra_vacia = this.ahorcadoService.rellenarPalabra();
     this.figures = this.ahorcadoService.figuras;
@@ -48,7 +48,7 @@ export class AhorcadoComponent implements OnInit{
       this.figure = this.figures[this.i];
       this.i += 1;
       if (this.i == 8){
-        this.ganar = true;
+        this.perder = true;
       }
     }
     if (!(this.letrasUsadas.includes(this.valor_ingresado.toLowerCase()))){
